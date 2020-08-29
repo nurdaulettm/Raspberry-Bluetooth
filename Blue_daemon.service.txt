@@ -1,0 +1,11 @@
+[Unit]
+Description=Blueservice
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/Desktop/altenative.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
